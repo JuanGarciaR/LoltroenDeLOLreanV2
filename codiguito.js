@@ -26,5 +26,7 @@ function transicion ()
 function cambiarColor (datos) 
 {
 	var col = datos.currentTarget.id;
-	$("#cochecito img").attr("src", "c"+ col +".jpg")
+	$("#cochecito img").attr("src", "c"+ col +".jpg");
+	///La Tarea para cambiar el nombre donde sale color en el figcaption
+	$('#cochecito figcaption ul li:first').html("<strong>Color: </strong>"+ col);
 }
